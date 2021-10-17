@@ -1,0 +1,124 @@
+#logo {
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#form-container {
+    display: none;
+}
+
+#form-frame {
+    width: 100%;
+    height: 975px;
+}
+
+#container {
+    width: 25%;
+    max-width: 100%;
+    height: 100%;
+    margin: auto !important;
+    display: block;
+    position: relative;
+    list-style-type: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#card-container {
+    display: block;
+    padding-bottom: 105%;
+}
+
+@media (max-width: 768px) {
+    #container {
+        width: 75%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.buddy {
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    cursor: hand;
+    position: absolute;
+}
+
+.rotate-left {
+    transform: rotate(30deg) scale(0.8);
+    transition: 1s;
+    margin-left: 50vw;
+    cursor: e-resize;
+    opacity: 0;
+    z-index: 10;
+}
+
+.rotate-right {
+    transform: rotate(-30deg) scale(0.8);
+    transition: 1s;
+    opacity: 0;
+    margin-left: -50vw;
+    cursor: w-resize;
+    z-index: 10;
+}
+
+.avatar {
+    background: #222;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: calc(100% - 50px);
+    display: block;
+    background-size: auto 120% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    padding: 15px 15px;
+    height: 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.status {
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    text-shadow: none;
+    color: white;
+    top: 30px;
+}
+
+.like {
+    background: green;
+    right: 30px;
+}
+
+.dislike {
+    background: red;
+    left: 30px;
+}
